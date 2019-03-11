@@ -5,8 +5,9 @@
     "queries": ["duck", "yellow", "bathroom"]
   },
   {
-    "site": "Google",
-    "url": "https://www.google.com/?q=",
-    "queries": ["rainbow", "unicorn"]
+    "site": "宣凶師ベリックス",
+    "queries": ["rainbow", "unicorn"],
+    "url_start": "https://www.google.com/?q=",
+    "url_end": "<--TYPE-->"
   }
 ]

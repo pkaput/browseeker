@@ -33,6 +33,12 @@ def make_decision():
         print("Not a number")
         return make_decision()
 
+def data_has(data, key):
+    try:
+      data[str(key)]
+      return True
+    except KeyError, TypeError:
+      return False
 
 def main():
     global data
@@ -42,9 +48,13 @@ def main():
     else:
         show_avalible_sites()
         decision = make_decision()
-    for query in data[decision - 1]["queries"]:
-        webbrowser.open(data[decision - 1]["url"] + query, new=2)
-        time.sleep(0.6)
+        data_decision = data[decision - 1]
+    for query in data_decision["queries"]:
+        if data_has(data_decision, "url"):
+            webbrowser.open(data_decision["url"] + query, new = 2)
+        else:    
+            webbrowser.open(data_decision["url_start"] + query + data_decision["url_end"], new = 2)
+            time.sleep(0.6)
     exit(0)
 
 
