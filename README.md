@@ -6,5 +6,5 @@
  3. Select site to open
 
 # Shortcut
- python main.py {number}
+ Run main.py {number}\n
  will trigger main function with decision number equal to {number}
