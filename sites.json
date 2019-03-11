@@ -1,0 +1,12 @@
+[
+  {
+    "site": "DuckDuckGo",
+    "url": "https://duckduckgo.com/?q=",
+    "queries": ["duck", "yellow", "bathroom"]
+  },
+  {
+    "site": "Google",
+    "url": "https://www.google.com/?q=",
+    "queries": ["rainbow", "unicorn"]
+  }
+]
